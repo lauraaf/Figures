@@ -12,16 +12,20 @@ public class Main {
 
         System.out.println("suma: " + res);
 
-        print(v);
+       /* print(v);
 
         sort(v);
 
-        print(v);
+        print(v);*/
     }
 
     private static double suma(Figura[] v) {
         //hem de recorre el vector v per fer la suma de totes les arees
-
+        double res = 0;
+        for (Figura vector: v){
+            res += vector.area();
+        }
+        return res;
 
     }
 
